@@ -12,41 +12,10 @@
     <h2>Infinite Scroll</h2>
     <main>
       <ol id="infi-list"></ol>
-		<li>Item 1</li>
-		<li>Item 2</li>
-		<li>Item 3</li>
-		<li>Item 4</li>
-		<li>Item 5</li>
-		<li>Item 6/li>
-		<li>Item 7</li>
-		<li>Item 8</li>
-		<li>Item 9</li>
-		<li>Item 10</li>
+		
     </main>
     <script src="./script.js">
-		document.addEventListener("DOMContentLoaded", function(){
-			const list = document.getElementById("infi-list");
-
-     function addItems(){
-		for(let i=1; i<=2; i++){
-		 const listitem = document.createElement("li");
-		 listitem.textContent=  "Item" +  (list.children.length+1);
-		 list.appendChild(listitem);
-	 }
-		}	
-			window.addEventListener("scroll", function(){
-				const scrollTop = document.documentElement.scrollTop;
-				const scrollHeight=document.documentElement.scrollHeight;
-				const clientHeight = document.documentElement.clientHeight;
-		        const buffer = 100;
-		if(scrollTop + clientHeight === scrollHeight)
-		{
-			addItems();
-		}
-		});
-
-			addItems();
-		});
+		
 	</script>
   </body>
 </html>
